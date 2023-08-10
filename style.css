@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    min-height: 100vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+
+
+
+.outerContainer{
+    width:30%;
+    position : relative;
+    padding-top:30%;
+    border : 1px solid white;
+}
+
+.innerContainer{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+   
+}
+
+.hoverEvent{
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
