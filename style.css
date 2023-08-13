@@ -10,60 +10,148 @@ body{
     min-height: 100vh;
     width: 100%;
    display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+   
+   background-color:#1e2124;
+   gap: 20px;
+   
+}
+
+header{
+    margin-top: 30px;
+}
+
+main{
+    
+flex:1;
+display: flex;
    justify-content: center;
    align-items: center;
-   background-color: black;
    gap: 10%;
+   flex-wrap: wrap;
 }
 
 
-
 .outerContainer{
-    width:35%;
+    width:38%;
     position : relative;
-    padding-top:35%;
-    border : 1px solid white;
+    padding-top:38%;
+    border : 1px solid #7289DA;
+    margin-right: auto;
 }
 
 .innerContainer{
     position:absolute;
-    /* width:100%;
-    height: 100%; */
+   background-color: #ECF3F9;
     top:0;
     left:0;
     right:0;
     bottom:0;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
+    
 }
 
 
-/* .pixels{
-
-
-    border: 1px solid white;
-      flex: 1;
-  
-
-} */
 
 
 .optionsPanel{
-
+padding:1.5em;
 width:20%;
+border: 1px solid #7289DA;   
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+margin-left: 6%;
+}
+h2{
+  color:#7289DA;
+}
+button{
+    width:100%;
+    font-size: 1.2rem;
+    padding:0.7em;
+    background-color: black;
+    color: #7289DA;
+    border : 1px solid #7289DA;
+    box-shadow: 2px 2px #424549;
+}
 
-border: 1px solid white;   
+button:hover{
+
+    background-color: #7289DA;
+    color: black;
 
 }
 
+.selected{
+    background-color: #7289DA;
+    color: black;
+}
+
+input[type='color'], #colorLabel{
+    
+    flex :1;
+}
 
 
+#gridDisplay, h2,h1{
+    color:#7289DA;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+#colorLabel{padding: 0;
+
+    font-size: 1.2rem;
+    color:#7289DA;
+    margin:0;}
+
+.color{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    
+}
 
 
+input[type="range"] {
+    width:100%;
+    accent-color: #7289DA;
+  }
 
 
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    width:100%;
+     background-color: #36393E;
+    text-align: center;
+    color:#ECF3F9;
+    padding:500px auto;
+    min-height: 8vh;
+    font-size: 1.2rem;
+    
+  }
 
 
+  footer a{
+    color:#ECF3F9;
+  }
+  footer a:hover{
+    color:white;
+    transform: scale(1.2);
+    transition: all 0,3s;
+  }
 
+  footer p{
+    font-size: 1.2rem;
 
+  }

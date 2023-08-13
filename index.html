@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Sketch Pad</title>
 </head>
-<body>
 
-   
+<body>
+<header>    <h1>SKETCH-A-RAMA</h1></header>
+  <main>
     <div class="optionsPanel">
-        <input type="range" value ='5' min="3" max="40" class="gridSize">
-        <input type="color" class="color" value="#e5e5e5">
-        <div class="reset"><button class="reset">Reset</button></div>
-        <button class="mixNmatch" value="rainbow">Color Party</button>
-        <button class="eraser" value="eraser">Eraser</button>
-        </div>
+           
+            <h3 id="gridDisplay"></h3>
+            <input type="range" value='8' min="8" max="40" class="gridSize">
+            <div class="color"><label for="color" id="colorLabel">Pen Color</label>
+            <input type="color" id="color" value="black"></div>
+
+            <button class="mixNmatch" value="rainbow">Color Party</button>
+            <button class="eraser" value="eraser">Eraser</button>
+            <button class="reset">Reset</button>;      
+    </div>
     <div class="outerContainer">
         <div class="innerContainer"></div>
     </div>
+</main>
 
- 
-    
-  
+<footer> <p> Made by Anshuman Chaurasia</p> <a href="https://github.com/ansh-chrs/sketch-pad"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></footer>
+
 
 </body>
+
 </html>
