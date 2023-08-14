@@ -135,8 +135,8 @@ input[type="range"] {
      background-color: #36393E;
     text-align: center;
     color:#ECF3F9;
-    padding:500px auto;
-    min-height: 8vh;
+    padding: 15px o 15px;
+    min-height: 5vh;
     font-size: 1.2rem;
     
   }
